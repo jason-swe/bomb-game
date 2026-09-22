@@ -70,6 +70,90 @@ body {
   display: inline-block;
 }
 
+.score-panel {
+  width: 90vw;
+  max-width: 800px;
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background: #fffdf7;
+  border: 3px solid #8e0000;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.score-heading {
+  color: #8e0000;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.team-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.team-card {
+  position: relative;
+  min-height: 82px;
+  border: 2px solid #c62828;
+  background: #fdf8e6;
+  color: #8e0000;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.team-card:hover:not(:disabled),
+.team-card.selected {
+  background: #c62828;
+  color: #ffeb3b;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(142, 0, 0, 0.3);
+}
+
+.team-card:disabled {
+  cursor: default;
+}
+
+.team-name,
+.team-score,
+.turn-label {
+  display: block;
+}
+
+.team-name {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.team-score {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.turn-label {
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.turn-instruction {
+  margin-top: 10px;
+  color: #4e0000;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.team-notice {
+  margin-top: 8px;
+  color: #c62828;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
 .board-wrapper {
   background: #fffdf7;
   padding: 20px;
@@ -415,6 +499,54 @@ body {
   line-height: 1.5;
 }
 
+.target-team-box {
+  width: 100%;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 2px solid #c62828;
+  text-align: center;
+}
+
+.target-team-title {
+  color: #4e0000;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.target-team-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.target-team-btn {
+  background: #c62828;
+  color: #ffeb3b;
+  border: none;
+  padding: 11px 20px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.target-team-btn:hover:not(:disabled),
+.target-team-btn.selected {
+  background: #2e7d32;
+}
+
+.target-team-btn:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.target-team-result {
+  margin-top: 10px;
+  color: #2e7d32;
+  font-weight: 900;
+}
+
 /* ROULETTE UI */
 .roulette-ui-modern {
   display: flex;
@@ -698,4 +830,8 @@ body {
   .m-options-box { padding: 15px; }
   .m-option-item { font-size: 1rem; padding: 10px; }
   .m-btn-primary { font-size: 1rem; padding: 12px 20px; }
+  .score-panel { padding: 12px; }
+  .team-card { min-height: 72px; }
+  .team-score { font-size: 1.6rem; }
+  .target-team-btn { padding: 10px 14px; }
 }

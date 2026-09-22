@@ -96,100 +96,98 @@ const bombConfig = [
   { text: '🎲 ROULETTE NGA', desc: 'Hên xui 50/50: Hãy chọn 1 trong 2 lá bài để định đoạt số phận!', type: 'bomb-action', count: 1, sound: 'suspense' },
   { text: '🥷 ĂN CƯỚP', desc: 'Chỉ định lấy 1 điểm từ 1 đội bất kỳ.', type: 'bomb-action', count: 2, sound: 'explosion' },
   { text: '🔄 ĐỔI VẬN', desc: 'Tráo đổi toàn bộ điểm số hiện tại với 1 đội bất kỳ.', type: 'bomb-action', count: 1, sound: 'correct' },
-  { text: '🤝 CỘNG SINH', desc: 'Đội bốc trúng được +2 điểm, và có quyền kéo thêm 1 đội khác cùng được +2 điểm.', type: 'bomb-action', count: 2, sound: 'correct' },
   { text: '🧤 BÀN TAY THANOS', desc: 'Giáng điểm của đội đang dẫn đầu xuống bằng mức điểm của đội đang bét bảng.', type: 'bomb-action', count: 1, sound: 'explosion' }
 ];
 
 const questionsData = [
-
   {
-    text: "Khẳng định: “Năm tháng sẽ trôi qua, nhưng thắng lợi của nhân dân ta trong sự nghiệp kháng chiến chống Mỹ, cứu nước mãi mãi được ghi vào lịch sử dân tộc ta như một trong những trang chói lọi nhất...” là của Đại hội nào của Đảng?",
-    options: ["A. Đại hội lần thứ VI", "B. Đại hội lần thứ V", "C. Đại hội lần thứ IV", "D. Đại hội lần thứ III"],
+    text: "Chế độ dân chủ nhân dân ở Việt Nam được xác lập sau sự kiện nào?",
+    options: ["A. Cách mạng Tháng Mười Nga năm 1917", "B. Cách mạng Tháng Tám năm 1945", "C. Đại hội VI của Đảng năm 1986", "D. Hiến pháp năm 2013"],
+    answer: "B"
+  },
+  {
+    text: "Đại hội VI của Đảng (năm 1986) đã nhấn mạnh phát huy dân chủ nhằm mục đích gì?",
+    options: ["A. Xây dựng nền kinh tế tư bản chủ nghĩa", "B. Tạo ra động lực mạnh mẽ cho phát triển đất nước", "C. Xóa bỏ hoàn toàn vai trò của Nhà nước", "D. Thay đổi bản chất của chế độ chính trị"],
+    answer: "B"
+  },
+  {
+    text: "Theo giáo trình, một trong những đặc trưng của chủ nghĩa xã hội Việt Nam là:",
+    options: ["A. Do Nhà nước quản lý toàn bộ xã hội", "B. Do nhân dân làm chủ", "C. Do kinh tế quyết định hoàn toàn", "D. Do thị trường tự điều chỉnh"],
+    answer: "B"
+  },
+  {
+    text: "Dân chủ xã hội chủ nghĩa ở Việt Nam được xác định là:",
+    options: ["A. Chỉ là một phương thức quản lý xã hội", "B. Chỉ là một mục tiêu chính trị", "C. Bản chất của chế độ, vừa là mục tiêu vừa là động lực phát triển đất nước", "D. Một hình thức tổ chức nhà nước đơn thuần"],
     answer: "C"
   },
   {
-    text: "Một trong những bài học kinh nghiệm lãnh đạo của Đảng trong thời kỳ 1954 - 1975 là:",
-    options: ["A. Giương cao ngọn cờ độc lập dân tộc và chủ nghĩa xã hội nhằm huy động sức mạnh toàn dân đánh Mỹ, cả nước đánh Mỹ", "B. Chỉ tập trung xây dựng chủ nghĩa xã hội ở miền Bắc", "C. Hạn chế sự tham gia của quần chúng nhân dân trong chiến tranh", "D. Không tranh thủ sự đồng tình, ủng hộ của quốc tế"],
-    answer: "A"
-  },
-  {
-    text: "Sau năm 1975, đất nước ta bước vào thời kỳ nào?",
-    options: ["A. Kinh tế thị trường xã hội chủ nghĩa", "B. Đất nước hòa bình, độc lập thống nhất, cả nước quá độ lên chủ nghĩa xã hội", "C. Hoàn thành công nghiệp hóa, hiện đại hóa", "D. Đổi mới toàn diện và hội nhập quốc tế"],
+    text: "Dân chủ xã hội chủ nghĩa ở Việt Nam phải được gắn liền với yếu tố nào?",
+    options: ["A. Cạnh tranh kinh tế", "B. Kỷ luật, kỷ cương và pháp luật", "C. Quyền lực cá nhân", "D. Lợi ích riêng của từng nhóm xã hội"],
     answer: "B"
   },
   {
-    text: "Nhiệm vụ đầu tiên, bức thiết nhất được Đảng đặt ra sau đại thắng mùa Xuân năm 1975 là gì?",
-    options: ["A. Phát triển các quy chế, chuẩn mực về kinh tế", "B. Cải tạo công thương nghiệp tư bản tư doanh", "C. Thống nhất đất nước về mặt nhà nước", "D. Khôi phục hoàn toàn cơ sở hạ tầng thời chiến"],
+    text: "Bản chất của nền dân chủ xã hội chủ nghĩa ở Việt Nam dựa vào:",
+    options: ["A. Sự phát triển tự do của thị trường", "B. Nhà nước xã hội chủ nghĩa và sự ủng hộ, giúp đỡ của nhân dân", "C. Hoạt động của các tổ chức kinh tế", "D. Quyền lực của một nhóm xã hội"],
+    answer: "B"
+  },
+  {
+    text: "Theo giáo trình, quyền làm chủ của nhân dân được hiểu là:",
+    options: ["A. Nhân dân chỉ tham gia đóng góp ý kiến", "B. Mọi quyền lực đều thuộc về nhân dân, dân là gốc, dân làm chủ", "C. Nhân dân chỉ thực hiện nghĩa vụ với Nhà nước", "D. Nhân dân không tham gia quản lý xã hội"],
+    answer: "B"
+  },
+  {
+    text: "Dân chủ xã hội chủ nghĩa ở Việt Nam được thực hiện thông qua những hình thức nào?",
+    options: ["A. Dân chủ kinh tế và dân chủ văn hóa", "B. Dân chủ tập trung và dân chủ tự do", "C. Dân chủ trực tiếp và dân chủ gián tiếp", "D. Dân chủ nhà nước và dân chủ thị trường"],
     answer: "C"
   },
   {
-    text: "Đoàn đại biểu miền Nam do ai dẫn đầu tham dự Hội nghị Hiệp thương chính trị với miền Bắc vào tháng 11/1975?",
-    options: ["A. Phạm Hùng", "B. Huỳnh Tấn Phát", "C. Trường Chinh", "D. Nguyễn Hữu Thọ"],
-    answer: "A"
-  },
-  {
-    text: "Điền từ còn thiếu trong Nghị quyết Hội nghị TW 24 (8/1975): “... đất nước vừa là nguyện vọng thiết tha của nhân dân cả nước, vừa là quy luật khách quan của sự phát triển cách mạng Việt Nam, của lịch sử dân tộc Việt Nam.”",
-    options: ["A. Độc lập", "B. Thống nhất", "C. Giải phóng", "D. Đổi mới"],
+    text: "Hình thức dân chủ gián tiếp được thực hiện thông qua việc:",
+    options: ["A. Nhân dân trực tiếp quyết định mọi vấn đề", "B. Nhân dân ủy quyền cho tổ chức, cá nhân do mình bầu ra", "C. Nhà nước tự quyết định các vấn đề xã hội", "D. Các tổ chức kinh tế quản lý xã hội"],
     answer: "B"
   },
   {
-    text: "Hội nghị Hiệp thương chính trị giữa hai đoàn đại biểu miền Bắc và miền Nam (11/1975) đã diễn ra tại đâu?",
-    options: ["A. Sài Gòn", "B. Hà Nội", "C. Huế", "D. Đà Nẵng"],
-    answer: "A"
-  },
-  {
-    text: "Cuộc Tổng tuyển cử bầu Quốc hội chung trên toàn lãnh thổ (25/4/1976) được tiến hành theo những nguyên tắc nào?",
-    options: ["A. Dân chủ, phổ thông, bình đẳng, trực tiếp và bỏ phiếu kín", "B. Hiệp thương dân chủ và chỉ định đại biểu", "C. Bỏ phiếu gián tiếp qua hội đồng nhân dân các cấp", "D. Phổ thông, công khai và trực tiếp"],
-    answer: "A"
-  },
-  {
-    text: "Tại kỳ họp thứ nhất Quốc hội khóa VI (6-7/1976), ai được bầu làm Chủ tịch nước đầu tiên của nước Cộng hòa Xã hội chủ nghĩa Việt Nam?",
-    options: ["A. Phạm Văn Đồng", "B. Tôn Đức Thắng", "C. Trường Chinh", "D. Lê Duẩn"],
+    text: "Quốc hội Việt Nam được xác định là:",
+    options: ["A. Cơ quan hành pháp cao nhất", "B. Cơ quan quyền lực nhà nước cao nhất", "C. Cơ quan tư pháp cao nhất", "D. Cơ quan kinh tế cao nhất"],
     answer: "B"
   },
   {
-    text: "Mặt trận Tổ quốc Việt Nam, Đoàn Thanh niên Lao động Hồ Chí Minh, Tổng Công đoàn Việt Nam... được gọi chung là gì?",
-    options: ["A. Cơ quan quyền lực nhà nước", "B. Các tổ chức kinh tế tập thể", "C. Các tổ chức chính trị - xã hội", "D. Cơ quan hành chính trung ương"],
-    answer: "C"
-  },
-  {
-    text: "Đại hội đại biểu toàn quốc lần thứ IV của Đảng (12/1976) đã quyết định đổi tên Đảng thành gì?",
-    options: ["A. Đảng Lao động Việt Nam", "B. Đảng Cộng sản Đông Dương", "C. Đảng Cộng sản Việt Nam", "D. Hội đồng Cách mạng Việt Nam"],
-    answer: "C"
-  },
-  {
-    text: "Đại hội lần thứ IV của Đảng (12/1976) đã xác định đặc điểm nào là lớn nhất của cách mạng Việt Nam trong giai đoạn mới?",
-    options: ["A. Cả nước tiến hành cuộc đấu tranh giải phóng dân tộc", "B. Từ một xã hội kinh tế còn phổ biến là sản xuất nhỏ tiến thẳng lên CNXH, bỏ qua giai đoạn phát triển TBCN", "C. Chịu hậu quả nặng nề do sự bao vây cấm vận của chủ nghĩa đế quốc", "D. Đã hoàn thành xong thời kỳ quá độ lên chủ nghĩa xã hội"],
+    text: "Phương châm thực hiện dân chủ ở cơ sở được nêu trong giáo trình là:",
+    options: ["A. Dân nghe, dân hiểu, dân làm", "B. Dân biết, dân bàn, dân làm, dân kiểm tra", "C. Dân quản lý, dân quyết định, dân thực hiện", "D. Dân kiểm tra, Nhà nước quyết định"],
     answer: "B"
   },
   {
-    text: "Đại hội IV của Đảng xác định nhiệm vụ trung tâm của cả thời kỳ quá độ lên CNXH ở nước ta là gì?",
-    options: ["A. Đẩy mạnh công nghiệp hóa xã hội chủ nghĩa", "B. Phát triển kinh tế nhiều thành phần", "C. Hoàn thành cải cách ruộng đất", "D. Đẩy mạnh kinh tế thị trường"],
+    text: "Nhà nước pháp quyền nói chung được hiểu là nhà nước:",
+    options: ["A. Quản lý xã hội bằng quyền lực cá nhân", "B. Thượng tôn pháp luật, hướng tới phúc lợi cho mọi người", "C. Không cần có sự phân công quyền lực", "D. Không chịu sự giám sát của nhân dân"],
+    answer: "B"
+  },
+  {
+    text: "Một trong những nội dung xây dựng Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam là:",
+    options: ["A. Đề cao vai trò tối thượng của Hiến pháp và pháp luật", "B. Giảm quyền tham gia của công dân", "C. Loại bỏ sự kiểm soát quyền lực", "D. Tập trung toàn bộ quyền lực vào một cơ quan"],
     answer: "A"
   },
   {
-    text: "Một trong những hạn chế, khuyết điểm chủ quan của Đại hội IV (1976) được Đảng chỉ ra là gì?",
-    options: ["A. Đánh giá quá thấp sức mạnh của khối đại đoàn kết dân tộc", "B. Không chú trọng đến nhiệm vụ củng cố an ninh - quốc phòng", "C. Dự kiến hoàn thành đưa nền kinh tế từ sản xuất nhỏ lên sản xuất lớn XHCN trong khoảng 20 năm", "D. Chưa đặt nhiệm vụ thống nhất đất nước lên hàng đầu"],
-    answer: "C"
-  },
-  {
-    text: "Hội nghị Trung ương 6 (8/1979) được coi là bước đột phá đầu tiên trong đổi mới kinh tế của Đảng với chủ trương nào?",
-    options: ["A. Phát triển kinh tế thị trường định hướng xã hội chủ nghĩa", "B. Phá bỏ những rào cản để cho “sản xuất bung ra”", "C. Tư nhân hóa hoàn toàn các xí nghiệp quốc doanh", "D. Xóa bỏ triệt để các hợp tác xã nông nghiệp"],
-    answer: "B"
-  },
-  {
-    text: "Trước hiện tượng \"khoán chui\" trong hợp tác xã nông nghiệp, Ban Bí thư đã ban hành văn kiện nào vào tháng 1/1981?",
-    options: ["A. Chỉ thị số 100-CT/TW", "B. Chỉ thị số 228-CT/TW", "C. Quyết định số 25-CP", "D. Quyết định số 26-CP"],
+    text: "Theo giáo trình, Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam có đặc điểm:",
+    options: ["A. Nhà nước của dân, do dân, vì dân", "B. Nhà nước chỉ phục vụ cơ quan quản lý", "C. Nhà nước không cần pháp luật điều chỉnh", "D. Nhà nước đứng ngoài xã hội"],
     answer: "A"
   },
   {
-    text: "Cuối tháng 12/1978, tập đoàn Pôn Pốt huy động tổng lực tiến công xâm lược trên toàn tuyến biên giới Tây Nam của Việt Nam nhằm mục tiêu gì?",
-    options: ["A. Chiếm đảo Thổ Chu và Phú Quốc", "B. Nhanh chóng tiến sâu vào nội địa Việt Nam", "C. Buộc Việt Nam mở cửa biên giới tự do thương mại", "D. Phá hoại quan hệ hữu nghị giữa Việt Nam và Liên Xô"],
+    text: "Trong Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam, pháp luật được đặt ở vị trí:",
+    options: ["A. Tham khảo", "B. Tối thượng", "C. Không bắt buộc", "D. Thứ yếu"],
     answer: "B"
   },
   {
-    text: "Ngày 17/2/1979, diễn ra sự kiện lịch sử quan trọng nào trên tuyến biên giới nước ta?",
-    options: ["A. Tập đoàn Pôn Pốt tấn công xâm lấn biên giới Tây Nam", "B. Trung Quốc huy động hơn 60 vạn quân đồng loạt tấn công toàn tuyến biên giới phía Bắc", "C. Lực lượng FULRO chiếm đóng các tỉnh Tây Nguyên", "D. Mỹ đưa hạm đội vào phong tỏa vùng biển miền Trung"],
+    text: "Quyền lực nhà nước ở Việt Nam được xác định là:",
+    options: ["A. Chia tách hoàn toàn giữa các cơ quan", "B. Thống nhất, có sự phân công, phối hợp và kiểm soát", "C. Thuộc riêng một cơ quan duy nhất", "D. Không cần kiểm soát"],
+    answer: "B"
+  },
+  {
+    text: "Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam chịu sự lãnh đạo của:",
+    options: ["A. Các tổ chức kinh tế", "B. Đảng Cộng sản Việt Nam", "C. Các tổ chức xã hội tự quản", "D. Các doanh nghiệp nhà nước"],
+    answer: "B"
+  },
+  {
+    text: "Một đặc điểm của Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam là:",
+    options: ["A. Không quan tâm đến quyền con người", "B. Coi con người là chủ thể, trung tâm của sự phát triển", "C. Hạn chế quyền dân chủ của nhân dân", "D. Không cần sự giám sát của nhân dân"],
     answer: "B"
   }
 ];
@@ -199,6 +197,10 @@ const revIcons = ['★', '☭', '★', '☭'];
 function App() {
   const [cells, setCells] = useState([]);
   const [selectedCard, setSelectedCard] = useState(null);
+  const [scores, setScores] = useState({ A: 0, B: 0 });
+  const [activeTeam, setActiveTeam] = useState(null);
+  const [teamNotice, setTeamNotice] = useState('');
+  const [targetTeam, setTargetTeam] = useState(null);
 
   // States cho Roulette Nga
   const [rouletteCards, setRouletteCards] = useState([]);
@@ -210,6 +212,33 @@ function App() {
   const [clickedOptions, setClickedOptions] = useState([]);
   const [isQuestionSolved, setIsQuestionSolved] = useState(false);
   const [isBombRevealed, setIsBombRevealed] = useState(false);
+
+  const updateTeamScore = (team, change) => {
+    setScores(prev => ({
+      ...prev,
+      [team]: Math.max(0, prev[team] + change)
+    }));
+  };
+
+  const applyBombEffect = (card) => {
+    if (card.label === '💥 BOM NỔ -1') updateTeamScore(activeTeam, -1);
+    else if (card.label === '💣 BOM NỔ -2') updateTeamScore(activeTeam, -2);
+    else if (card.label === '🪚 CƯA ĐÔI') {
+      setScores(prev => ({ ...prev, [activeTeam]: Math.floor(prev[activeTeam] / 2) }));
+    } else if (card.label === '☠️ RESET') {
+      setScores(prev => ({ ...prev, [activeTeam]: 0 }));
+    } else if (card.label === '🎁 QUÀ TẶNG +1') updateTeamScore(activeTeam, 1);
+    else if (card.label === '💎 QUÀ TẶNG +2') updateTeamScore(activeTeam, 2);
+    else if (card.label === '🧤 BÀN TAY THANOS') {
+      setScores(prev => {
+        const highestScore = Math.max(prev.A, prev.B);
+        const lowestScore = Math.min(prev.A, prev.B);
+        if (highestScore === lowestScore) return prev;
+        const leadingTeam = prev.A > prev.B ? 'A' : 'B';
+        return { ...prev, [leadingTeam]: lowestScore };
+      });
+    }
+  };
 
   // Khởi tạo ma trận
   useEffect(() => {
@@ -240,6 +269,22 @@ function App() {
       }
     });
 
+    const giftBombs = bombConfig.filter(bomb => (
+      bomb.text === '🎁 QUÀ TẶNG +1' || bomb.text === '💎 QUÀ TẶNG +2'
+    ));
+    for (let i = 0; i < 2; i++) {
+      const gift = giftBombs[Math.floor(Math.random() * giftBombs.length)];
+      initialCells.push({
+        id: `BONUS_GIFT_${i}`,
+        label: gift.text,
+        content: gift.desc,
+        type: gift.type,
+        isOpened: false,
+        frontIcon: revIcons[Math.floor(Math.random() * revIcons.length)],
+        sound: gift.sound
+      });
+    }
+
     for (let i = initialCells.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [initialCells[i], initialCells[j]] = [initialCells[j], initialCells[i]];
@@ -263,6 +308,11 @@ function App() {
   }, [selectedCard, timeLeft, isQuestionSolved]);
 
   const handleCellClick = (index) => {
+    if (!activeTeam) {
+      setTeamNotice('Hãy chọn Đội A hoặc Đội B trước khi chọn thẻ.');
+      return;
+    }
+
     const newCells = [...cells];
     let clickedCell = { ...newCells[index] };
     
@@ -274,6 +324,8 @@ function App() {
     setClickedOptions([]);
     setIsQuestionSolved(false);
     setBombEffect('');
+    setTargetTeam(null);
+    setTeamNotice('');
 
     clickedCell.isOpened = true;
     newCells[index] = clickedCell;
@@ -303,6 +355,7 @@ function App() {
           else if (clickedCell.label.includes('RESET')) setBombEffect('effect-reset');
           else if (clickedCell.label.includes('ĂN CƯỚP')) setBombEffect('effect-steal');
 
+          applyBombEffect(clickedCell);
           if (clickedCell.type === 'bomb-good') {
             setTimeout(() => window.confetti && window.confetti({ particleCount: 150, spread: 70, origin: { y: 0.6 }, zIndex: 10000 }), 300);
           }
@@ -318,6 +371,7 @@ function App() {
     setRouletteChoiceIndex(idx);
     
     const choice = rouletteCards[idx];
+    updateTeamScore(activeTeam, choice.value);
     if (choice.value > 0) {
       setTimeout(() => window.confetti && window.confetti({ particleCount: 300, spread: 100, origin: { y: 0.5 }, zIndex: 10000 }), 100);
       sounds.correct();
@@ -335,6 +389,7 @@ function App() {
 
     if (isCorrect) {
       setIsQuestionSolved(true);
+      updateTeamScore(activeTeam, 1);
       sounds.correct();
       setTimeout(() => window.confetti && window.confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 }, colors: ['#ffff00', '#00ff00'], zIndex: 10000 }), 100);
     } else {
@@ -342,9 +397,33 @@ function App() {
     }
   };
 
+  const handleTargetTeam = (team) => {
+    if (team === activeTeam || targetTeam !== null) return;
+
+    setTargetTeam(team);
+    if (selectedCard.label === '🥷 ĂN CƯỚP') {
+      setScores(prev => {
+        const stolenPoints = Math.min(1, prev[team]);
+        return {
+          ...prev,
+          [activeTeam]: prev[activeTeam] + stolenPoints,
+          [team]: prev[team] - stolenPoints
+        };
+      });
+    } else if (selectedCard.label === '🔄 ĐỔI VẬN') {
+      setScores(prev => ({
+        ...prev,
+        [activeTeam]: prev[team],
+        [team]: prev[activeTeam]
+      }));
+    }
+  };
+
   const closeModal = () => {
     setSelectedCard(null);
     setBombEffect('');
+    setActiveTeam(null);
+    setTargetTeam(null);
   };
 
   const colHeaders = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -361,7 +440,34 @@ function App() {
       
       <div className="title-container slide-in-top">
         <h1 className="game-title">CHIẾN DỊCH LẬT MỞ</h1>
-        <div className="subtitle-badge bounce-anim">TỰ HÀO LỊCH SỬ</div>
+        <div className="subtitle-badge bounce-anim">TỰ HÀO VIỆT NAM</div>
+      </div>
+
+      <div className="score-panel fade-in-up">
+        <div className="score-heading">BẢNG ĐIỂM</div>
+        <div className="team-buttons">
+          {['A', 'B'].map(team => (
+            <button
+              key={team}
+              className={`team-card ${activeTeam === team ? 'selected' : ''}`}
+              onClick={() => {
+                if (!selectedCard) {
+                  setActiveTeam(team);
+                  setTeamNotice('');
+                }
+              }}
+              disabled={Boolean(selectedCard)}
+            >
+              <span className="team-name">ĐỘI {team}</span>
+              <strong className="team-score">{scores[team]}</strong>
+              {activeTeam === team && <span className="turn-label">ĐANG CHƠI</span>}
+            </button>
+          ))}
+        </div>
+        <div className="turn-instruction">
+          {activeTeam ? `Lượt của Đội ${activeTeam}. Hãy chọn một thẻ trên bảng.` : 'Chọn đội trước khi chọn thẻ.'}
+        </div>
+        {teamNotice && <div className="team-notice">{teamNotice}</div>}
       </div>
       
       <div className="board-wrapper fade-in-up">
@@ -517,6 +623,24 @@ function App() {
                          <h1 className="m-bomb-title" style={{fontSize: '2.5rem', marginBottom: '20px'}}>{selectedCard.label}</h1>
                          <div className="m-bomb-desc-box" style={{border: 'none', padding: '0'}}>
                            <p className="m-desc-text" style={{fontSize: '1.2rem'}}>{selectedCard.content}</p>
+                           {['🥷 ĂN CƯỚP', '🔄 ĐỔI VẬN'].includes(selectedCard.label) && (
+                             <div className="target-team-box">
+                               <p className="target-team-title">Chọn đội còn lại:</p>
+                               <div className="target-team-buttons">
+                                 {['A', 'B'].filter(team => team !== activeTeam).map(team => (
+                                   <button
+                                     key={team}
+                                     className={`target-team-btn ${targetTeam === team ? 'selected' : ''}`}
+                                     onClick={() => handleTargetTeam(team)}
+                                     disabled={targetTeam !== null}
+                                   >
+                                     ĐỘI {team}
+                                   </button>
+                                 ))}
+                               </div>
+                               {targetTeam && <p className="target-team-result">Đã áp dụng cho Đội {targetTeam}.</p>}
+                             </div>
+                           )}
                          </div>
                        </div>
                      )}
