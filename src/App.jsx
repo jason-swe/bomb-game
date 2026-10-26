@@ -101,94 +101,94 @@ const bombConfig = [
 
 const questionsData = [
   {
-    text: "Chế độ dân chủ nhân dân ở Việt Nam được xác lập sau sự kiện nào?",
-    options: ["A. Cách mạng Tháng Mười Nga năm 1917", "B. Cách mạng Tháng Tám năm 1945", "C. Đại hội VI của Đảng năm 1986", "D. Hiến pháp năm 2013"],
-    answer: "B"
-  },
-  {
-    text: "Đại hội VI của Đảng (năm 1986) đã nhấn mạnh phát huy dân chủ nhằm mục đích gì?",
-    options: ["A. Xây dựng nền kinh tế tư bản chủ nghĩa", "B. Tạo ra động lực mạnh mẽ cho phát triển đất nước", "C. Xóa bỏ hoàn toàn vai trò của Nhà nước", "D. Thay đổi bản chất của chế độ chính trị"],
-    answer: "B"
-  },
-  {
-    text: "Theo giáo trình, một trong những đặc trưng của chủ nghĩa xã hội Việt Nam là:",
-    options: ["A. Do Nhà nước quản lý toàn bộ xã hội", "B. Do nhân dân làm chủ", "C. Do kinh tế quyết định hoàn toàn", "D. Do thị trường tự điều chỉnh"],
-    answer: "B"
-  },
-  {
-    text: "Dân chủ xã hội chủ nghĩa ở Việt Nam được xác định là:",
-    options: ["A. Chỉ là một phương thức quản lý xã hội", "B. Chỉ là một mục tiêu chính trị", "C. Bản chất của chế độ, vừa là mục tiêu vừa là động lực phát triển đất nước", "D. Một hình thức tổ chức nhà nước đơn thuần"],
-    answer: "C"
-  },
-  {
-    text: "Dân chủ xã hội chủ nghĩa ở Việt Nam phải được gắn liền với yếu tố nào?",
-    options: ["A. Cạnh tranh kinh tế", "B. Kỷ luật, kỷ cương và pháp luật", "C. Quyền lực cá nhân", "D. Lợi ích riêng của từng nhóm xã hội"],
-    answer: "B"
-  },
-  {
-    text: "Bản chất của nền dân chủ xã hội chủ nghĩa ở Việt Nam dựa vào:",
-    options: ["A. Sự phát triển tự do của thị trường", "B. Nhà nước xã hội chủ nghĩa và sự ủng hộ, giúp đỡ của nhân dân", "C. Hoạt động của các tổ chức kinh tế", "D. Quyền lực của một nhóm xã hội"],
-    answer: "B"
-  },
-  {
-    text: "Theo giáo trình, quyền làm chủ của nhân dân được hiểu là:",
-    options: ["A. Nhân dân chỉ tham gia đóng góp ý kiến", "B. Mọi quyền lực đều thuộc về nhân dân, dân là gốc, dân làm chủ", "C. Nhân dân chỉ thực hiện nghĩa vụ với Nhà nước", "D. Nhân dân không tham gia quản lý xã hội"],
-    answer: "B"
-  },
-  {
-    text: "Dân chủ xã hội chủ nghĩa ở Việt Nam được thực hiện thông qua những hình thức nào?",
-    options: ["A. Dân chủ kinh tế và dân chủ văn hóa", "B. Dân chủ tập trung và dân chủ tự do", "C. Dân chủ trực tiếp và dân chủ gián tiếp", "D. Dân chủ nhà nước và dân chủ thị trường"],
-    answer: "C"
-  },
-  {
-    text: "Hình thức dân chủ gián tiếp được thực hiện thông qua việc:",
-    options: ["A. Nhân dân trực tiếp quyết định mọi vấn đề", "B. Nhân dân ủy quyền cho tổ chức, cá nhân do mình bầu ra", "C. Nhà nước tự quyết định các vấn đề xã hội", "D. Các tổ chức kinh tế quản lý xã hội"],
-    answer: "B"
-  },
-  {
-    text: "Quốc hội Việt Nam được xác định là:",
-    options: ["A. Cơ quan hành pháp cao nhất", "B. Cơ quan quyền lực nhà nước cao nhất", "C. Cơ quan tư pháp cao nhất", "D. Cơ quan kinh tế cao nhất"],
-    answer: "B"
-  },
-  {
-    text: "Phương châm thực hiện dân chủ ở cơ sở được nêu trong giáo trình là:",
-    options: ["A. Dân nghe, dân hiểu, dân làm", "B. Dân biết, dân bàn, dân làm, dân kiểm tra", "C. Dân quản lý, dân quyết định, dân thực hiện", "D. Dân kiểm tra, Nhà nước quyết định"],
-    answer: "B"
-  },
-  {
-    text: "Nhà nước pháp quyền nói chung được hiểu là nhà nước:",
-    options: ["A. Quản lý xã hội bằng quyền lực cá nhân", "B. Thượng tôn pháp luật, hướng tới phúc lợi cho mọi người", "C. Không cần có sự phân công quyền lực", "D. Không chịu sự giám sát của nhân dân"],
-    answer: "B"
-  },
-  {
-    text: "Một trong những nội dung xây dựng Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam là:",
-    options: ["A. Đề cao vai trò tối thượng của Hiến pháp và pháp luật", "B. Giảm quyền tham gia của công dân", "C. Loại bỏ sự kiểm soát quyền lực", "D. Tập trung toàn bộ quyền lực vào một cơ quan"],
+    text: "Theo Trung ương, sự kết thúc cách mạng dân tộc dân chủ nhân dân ở miền Bắc cũng là:",
+    options: ["A. Sự mở đầu của cách mạng xã hội chủ nghĩa", "B. Sự kết thúc thời kỳ quá độ", "C. Sự mở đầu kháng chiến chống Mỹ", "D. Sự hoàn thành thống nhất đất nước"],
     answer: "A"
   },
   {
-    text: "Theo giáo trình, Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam có đặc điểm:",
-    options: ["A. Nhà nước của dân, do dân, vì dân", "B. Nhà nước chỉ phục vụ cơ quan quản lý", "C. Nhà nước không cần pháp luật điều chỉnh", "D. Nhà nước đứng ngoài xã hội"],
+    text: "Sau năm 1954, ai trở thành kẻ thù trực tiếp của nhân dân Việt Nam?",
+    options: ["A. Thực dân Pháp", "B. Phát xít Nhật", "C. Đế quốc Mỹ", "D. Quân Tưởng Giới Thạch"],
+    answer: "C"
+  },
+  {
+    text: "Đến 7/1956, cải cách ruộng đất đã chia cho hơn 2 triệu hộ nông dân bao nhiêu ruộng đất?",
+    options: ["A. Hơn 81.000 ha", "B. Hơn 810.000 ha", "C. Hơn 1,8 triệu ha", "D. Hơn 500.000 ha"],
+    answer: "B"
+  },
+  {
+    text: "Hội nghị nào nghiêm khắc kiểm điểm, công khai tự phê bình và sửa sai trong cải cách ruộng đất?",
+    options: ["A. Hội nghị Trung ương 7 (3/1955)", "B. Hội nghị Trung ương 14 (11/1958)", "C. Hội nghị Trung ương 16 (4/1959)", "D. Hội nghị Trung ương 10 khóa II (9/1956)"],
+    answer: "D"
+  },
+  {
+    text: "Nguyên nhân của sai lầm trong cải cách ruộng đất là:",
+    options: ["A. Chủ quan, giáo điều, không xuất phát từ thực tiễn", "B. Thiếu cán bộ thực hiện", "C. Do địch phá hoại", "D. Thiếu kinh phí"],
     answer: "A"
   },
   {
-    text: "Trong Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam, pháp luật được đặt ở vị trí:",
-    options: ["A. Tham khảo", "B. Tối thượng", "C. Không bắt buộc", "D. Thứ yếu"],
+    text: "Ba nguyên tắc hợp tác hóa nông nghiệp (Hội nghị Trung ương 16, 4/1959) là:",
+    options: ["A. Tập trung, bình đẳng, công khai", "B. Tự giác, tự quản, tự chịu trách nhiệm", "C. Tự nguyện, cùng có lợi, quản lý dân chủ", "D. Đoàn kết, dân chủ, kỷ luật"],
+    answer: "C"
+  },
+  {
+    text: "Đối với tư sản, Đảng chủ trương cải tạo theo hướng nào?",
+    options: ["A. Tịch thu toàn bộ tài sản", "B. Cải tạo hòa bình qua hình thức công tư hợp doanh", "C. Đánh thuế cao để giải thể", "D. Giữ nguyên, không cải tạo"],
     answer: "B"
   },
   {
-    text: "Quyền lực nhà nước ở Việt Nam được xác định là:",
-    options: ["A. Chia tách hoàn toàn giữa các cơ quan", "B. Thống nhất, có sự phân công, phối hợp và kiểm soát", "C. Thuộc riêng một cơ quan duy nhất", "D. Không cần kiểm soát"],
+    text: "Tháng 10/1954, Xứ ủy Nam Bộ được thành lập. Ai làm Bí thư?",
+    options: ["A. Trường Chinh", "B. Phạm Văn Đồng", "C. Nguyễn Văn Linh", "D. Lê Duẩn"],
+    answer: "D"
+  },
+  {
+    text: "Nghị quyết Trung ương 15 (1/1959) xác định con đường cách mạng miền Nam là:",
+    options: ["A. Sử dụng bạo lực cách mạng, kết hợp đấu tranh chính trị với đấu tranh quân sự", "B. Chỉ đấu tranh chính trị, đòi hiệp thương tổng tuyển cử", "C. Chờ tổng tuyển cử theo Hiệp định Giơnevơ", "D. Đấu tranh ngoại giao là chủ yếu"],
+    answer: "A"
+  },
+  {
+    text: "Phong trào Đồng khởi bùng nổ ngày 17/1/1960 ở đâu?",
+    options: ["A. Trà Bồng (Quảng Ngãi)", "B. Bác Ái (Ninh Thuận)", "C. Mỏ Cày (Bến Tre)", "D. Tân Lập (Tây Ninh)"],
+    answer: "C"
+  },
+  {
+    text: "Mặt trận Dân tộc giải phóng miền Nam Việt Nam ra đời vào ngày nào?",
+    options: ["A. 17/1/1960", "B. 20/12/1960", "C. 19/5/1959", "D. 1/11/1963"],
     answer: "B"
   },
   {
-    text: "Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam chịu sự lãnh đạo của:",
-    options: ["A. Các tổ chức kinh tế", "B. Đảng Cộng sản Việt Nam", "C. Các tổ chức xã hội tự quản", "D. Các doanh nghiệp nhà nước"],
+    text: "Theo Đại hội III, cách mạng xã hội chủ nghĩa ở miền Bắc giữ vai trò gì?",
+    options: ["A. Quyết định trực tiếp", "B. Hỗ trợ", "C. Thứ yếu", "D. Quyết định nhất"],
+    answer: "D"
+  },
+  {
+    text: "Tháng 3/1964 gắn với phong trào thi đua nào ở miền Bắc?",
+    options: ["A. “Ba nhất”", "B. Hợp tác xã Đại Phong", "C. “Mỗi người làm việc bằng hai để đền đáp lại cho đồng bào miền Nam ruột thịt”", "D. Nhà máy cơ khí Duyên Hải"],
+    answer: "C"
+  },
+  {
+    text: "Công thức của chiến lược “Chiến tranh đặc biệt” là:",
+    options: ["A. Cố vấn, vũ khí Mỹ và quân chủ lực Việt Nam Cộng hòa", "B. Quân Mỹ trực tiếp tham chiến", "C. Không quân Mỹ đánh phá miền Bắc", "D. Quân đồng minh thay thế quân Mỹ"],
+    answer: "A"
+  },
+  {
+    text: "Ngày 2/1/1963 gắn với chiến thắng nào?",
+    options: ["A. Bình Giã", "B. Ấp Bắc", "C. Ba Gia", "D. Đồng Xoài"],
     answer: "B"
   },
   {
-    text: "Một đặc điểm của Nhà nước pháp quyền xã hội chủ nghĩa Việt Nam là:",
-    options: ["A. Không quan tâm đến quyền con người", "B. Coi con người là chủ thể, trung tâm của sự phát triển", "C. Hạn chế quyền dân chủ của nhân dân", "D. Không cần sự giám sát của nhân dân"],
+    text: "Theo tài liệu, tính đến cuối năm 1960, kết quả của phong trào Đồng khởi đạt được về mặt chính quyền tự quản tại miền Nam là gì?",
+    options: ["A. 1.283/2.627 xã do nhân dân lập chính quyền tự quản.", "B. 1.383/2.627 xã do nhân dân lập chính quyền tự quản.", "C. 1.483/2.627 xã do nhân dân lập chính quyền tự quản.", "D. 1.583/2.627 xã do nhân dân lập chính quyền tự quản."],
     answer: "B"
+  },
+  {
+    text: "Trong đường lối chung của cách mạng Việt Nam được xác định tại Đại hội đại biểu toàn quốc lần thứ III (9/1960), cách mạng xã hội chủ nghĩa ở miền Bắc giữ vai trò gì?",
+    options: ["A. Giữ vai trò quyết định trực tiếp đối với sự nghiệp giải phóng miền Nam.", "B. Giữ vai trò quyết định nhất đối với toàn bộ cách mạng Việt Nam và sự nghiệp thống nhất.", "C. Giữ vai trò nòng cốt trong đấu tranh ngoại giao.", "D. Giữ vai trò tham mưu chính sách cho toàn bộ cách mạng Việt Nam."],
+    answer: "B"
+  },
+  {
+    text: "Lực lượng vũ trang thống nhất thành Quân giải phóng miền Nam Việt Nam được thành lập vào mốc thời gian nào?",
+    options: ["A. Ngày 15/2/1961", "B. Ngày 10/8/1961", "C. Ngày 20/12/1960", "D. Ngày 2/1/1963"],
+    answer: "A"
   }
 ];
 
@@ -544,7 +544,7 @@ function App() {
                     <div className="m-options-title">ĐÁP ÁN:</div>
                     <div className="m-options-grid">
                       {selectedCard.content.options.map((opt, i) => {
-                        const isCorrect = opt.startsWith(selectedCard.content.answer);
+                        const isCorrect = Boolean(selectedCard.content.answer) && opt.startsWith(selectedCard.content.answer);
                         const isClicked = clickedOptions.includes(i);
                         const isTimeUp = timeLeft === 0;
                         
