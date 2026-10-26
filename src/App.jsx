@@ -89,14 +89,14 @@ export const sounds = {
 const bombConfig = [
   { text: '💥 BOM NỔ -1', desc: 'Trừ ngay 1 điểm. Qua lượt.', type: 'bomb-bad', count: 3, sound: 'explosion' },
   { text: '💣 BOM NỔ -2', desc: 'Trừ ngay 2 điểm. Qua lượt.', type: 'bomb-bad', count: 2, sound: 'explosion' },
-  { text: '🪚 CƯA ĐÔI', desc: 'Lập tức chia đôi số điểm hiện tại của đội bốc (làm tròn xuống).', type: 'bomb-bad', count: 1, sound: 'explosion' },
+  { text: '🪚 CƯA ĐÔI', desc: 'Lập tức chia đôi số điểm hiện tại của nhóm bốc (làm tròn xuống).', type: 'bomb-bad', count: 1, sound: 'explosion' },
   { text: '☠️ RESET', desc: 'Bay sạch điểm, đưa về số 0 tròn trĩnh.', type: 'bomb-bad', count: 1, sound: 'explosion' },
   { text: '🎁 QUÀ TẶNG +1', desc: 'Lập tức cộng 1 điểm miễn phí.', type: 'bomb-good', count: 2, sound: 'correct' },
   { text: '💎 QUÀ TẶNG +2', desc: 'Lập tức cộng 2 điểm miễn phí.', type: 'bomb-good', count: 2, sound: 'correct' },
   { text: '🎲 ROULETTE NGA', desc: 'Hên xui 50/50: Hãy chọn 1 trong 2 lá bài để định đoạt số phận!', type: 'bomb-action', count: 1, sound: 'suspense' },
-  { text: '🥷 ĂN CƯỚP', desc: 'Chỉ định lấy 1 điểm từ 1 đội bất kỳ.', type: 'bomb-action', count: 2, sound: 'explosion' },
-  { text: '🔄 ĐỔI VẬN', desc: 'Tráo đổi toàn bộ điểm số hiện tại với 1 đội bất kỳ.', type: 'bomb-action', count: 1, sound: 'correct' },
-  { text: '🧤 BÀN TAY THANOS', desc: 'Giáng điểm của đội đang dẫn đầu xuống bằng mức điểm của đội đang bét bảng.', type: 'bomb-action', count: 1, sound: 'explosion' }
+  { text: '🥷 ĂN CƯỚP', desc: 'Chỉ định lấy 1 điểm từ 1 nhóm bất kỳ.', type: 'bomb-action', count: 2, sound: 'explosion' },
+  { text: '🔄 ĐỔI VẬN', desc: 'Tráo đổi toàn bộ điểm số hiện tại với 1 nhóm bất kỳ.', type: 'bomb-action', count: 1, sound: 'correct' },
+  { text: '🧤 BÀN TAY THANOS', desc: 'Giáng điểm của nhóm đang dẫn đầu xuống bằng mức điểm của nhóm đang bét bảng.', type: 'bomb-action', count: 1, sound: 'explosion' }
 ];
 
 const questionsData = [
@@ -193,11 +193,14 @@ const questionsData = [
 ];
 
 const revIcons = ['★', '☭', '★', '☭'];
+const teams = ['1', '3', '4', '5', '6', '7'];
 
 function App() {
   const [cells, setCells] = useState([]);
   const [selectedCard, setSelectedCard] = useState(null);
-  const [scores, setScores] = useState({ A: 0, B: 0 });
+  const [scores, setScores] = useState(
+    Object.fromEntries(teams.map(team => [team, 0]))
+  );
   const [activeTeam, setActiveTeam] = useState(null);
   const [teamNotice, setTeamNotice] = useState('');
   const [targetTeam, setTargetTeam] = useState(null);
@@ -231,10 +234,11 @@ function App() {
     else if (card.label === '💎 QUÀ TẶNG +2') updateTeamScore(activeTeam, 2);
     else if (card.label === '🧤 BÀN TAY THANOS') {
       setScores(prev => {
-        const highestScore = Math.max(prev.A, prev.B);
-        const lowestScore = Math.min(prev.A, prev.B);
+        const scoreValues = teams.map(team => prev[team]);
+        const highestScore = Math.max(...scoreValues);
+        const lowestScore = Math.min(...scoreValues);
         if (highestScore === lowestScore) return prev;
-        const leadingTeam = prev.A > prev.B ? 'A' : 'B';
+        const leadingTeam = teams.find(team => prev[team] === highestScore);
         return { ...prev, [leadingTeam]: lowestScore };
       });
     }
@@ -309,7 +313,7 @@ function App() {
 
   const handleCellClick = (index) => {
     if (!activeTeam) {
-      setTeamNotice('Hãy chọn Đội A hoặc Đội B trước khi chọn thẻ.');
+      setTeamNotice('Hãy chọn một nhóm từ Nhóm 1, 3, 4, 5, 6 hoặc 7 trước khi chọn thẻ.');
       return;
     }
 
@@ -446,7 +450,7 @@ function App() {
       <div className="score-panel fade-in-up">
         <div className="score-heading">BẢNG ĐIỂM</div>
         <div className="team-buttons">
-          {['A', 'B'].map(team => (
+          {teams.map(team => (
             <button
               key={team}
               className={`team-card ${activeTeam === team ? 'selected' : ''}`}
@@ -458,14 +462,14 @@ function App() {
               }}
               disabled={Boolean(selectedCard)}
             >
-              <span className="team-name">ĐỘI {team}</span>
+              <span className="team-name">NHÓM {team}</span>
               <strong className="team-score">{scores[team]}</strong>
               {activeTeam === team && <span className="turn-label">ĐANG CHƠI</span>}
             </button>
           ))}
         </div>
         <div className="turn-instruction">
-          {activeTeam ? `Lượt của Đội ${activeTeam}. Hãy chọn một thẻ trên bảng.` : 'Chọn đội trước khi chọn thẻ.'}
+          {activeTeam ? `Lượt của Nhóm ${activeTeam}. Hãy chọn một thẻ trên bảng.` : 'Chọn nhóm trước khi chọn thẻ.'}
         </div>
         {teamNotice && <div className="team-notice">{teamNotice}</div>}
       </div>
@@ -625,20 +629,20 @@ function App() {
                            <p className="m-desc-text" style={{fontSize: '1.2rem'}}>{selectedCard.content}</p>
                            {['🥷 ĂN CƯỚP', '🔄 ĐỔI VẬN'].includes(selectedCard.label) && (
                              <div className="target-team-box">
-                               <p className="target-team-title">Chọn đội còn lại:</p>
+                               <p className="target-team-title">Chọn nhóm còn lại:</p>
                                <div className="target-team-buttons">
-                                 {['A', 'B'].filter(team => team !== activeTeam).map(team => (
+                                 {teams.filter(team => team !== activeTeam).map(team => (
                                    <button
                                      key={team}
                                      className={`target-team-btn ${targetTeam === team ? 'selected' : ''}`}
                                      onClick={() => handleTargetTeam(team)}
                                      disabled={targetTeam !== null}
                                    >
-                                     ĐỘI {team}
+                                     NHÓM {team}
                                    </button>
                                  ))}
                                </div>
-                               {targetTeam && <p className="target-team-result">Đã áp dụng cho Đội {targetTeam}.</p>}
+                               {targetTeam && <p className="target-team-result">Đã áp dụng cho Nhóm {targetTeam}.</p>}
                              </div>
                            )}
                          </div>
