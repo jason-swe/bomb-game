@@ -151,6 +151,11 @@ const questionsData = [
     answer: "C"
   },
   {
+    text: "Tính đến cuối năm 1960, phong trào Đồng khởi đạt được kết quả gì về chính quyền tự quản?",
+    options: ["A. 1.283/2.627 xã do nhân dân lập chính quyền tự quản", "B. 1.383/2.627 xã do nhân dân lập chính quyền tự quản", "C. 1.483/2.627 xã do nhân dân lập chính quyền tự quản", "D. 1.583/2.627 xã do nhân dân lập chính quyền tự quản"],
+    answer: "B"
+  },
+  {
     text: "Mặt trận Dân tộc giải phóng miền Nam Việt Nam ra đời vào ngày nào?",
     options: ["A. 17/1/1960", "B. 20/12/1960", "C. 19/5/1959", "D. 1/11/1963"],
     answer: "B"
@@ -171,24 +176,19 @@ const questionsData = [
     answer: "A"
   },
   {
+    text: "Từ ngày nào Mỹ bắt đầu rải chất độc dioxin xuống miền Nam Việt Nam?",
+    options: ["A. 15/2/1961", "B. 2/1/1963", "C. 10/8/1961", "D. 20/12/1960"],
+    answer: "C"
+  },
+  {
+    text: "Tháng 10/1961, tổ chức nào được thành lập để lãnh đạo trực tiếp cách mạng miền Nam?",
+    options: ["A. Xứ ủy Nam Bộ", "B. Mặt trận Dân tộc giải phóng miền Nam Việt Nam", "C. Quân giải phóng miền Nam Việt Nam", "D. Trung ương Cục miền Nam"],
+    answer: "D"
+  },
+  {
     text: "Ngày 2/1/1963 gắn với chiến thắng nào?",
     options: ["A. Bình Giã", "B. Ấp Bắc", "C. Ba Gia", "D. Đồng Xoài"],
     answer: "B"
-  },
-  {
-    text: "Theo tài liệu, tính đến cuối năm 1960, kết quả của phong trào Đồng khởi đạt được về mặt chính quyền tự quản tại miền Nam là gì?",
-    options: ["A. 1.283/2.627 xã do nhân dân lập chính quyền tự quản.", "B. 1.383/2.627 xã do nhân dân lập chính quyền tự quản.", "C. 1.483/2.627 xã do nhân dân lập chính quyền tự quản.", "D. 1.583/2.627 xã do nhân dân lập chính quyền tự quản."],
-    answer: "B"
-  },
-  {
-    text: "Trong đường lối chung của cách mạng Việt Nam được xác định tại Đại hội đại biểu toàn quốc lần thứ III (9/1960), cách mạng xã hội chủ nghĩa ở miền Bắc giữ vai trò gì?",
-    options: ["A. Giữ vai trò quyết định trực tiếp đối với sự nghiệp giải phóng miền Nam.", "B. Giữ vai trò quyết định nhất đối với toàn bộ cách mạng Việt Nam và sự nghiệp thống nhất.", "C. Giữ vai trò nòng cốt trong đấu tranh ngoại giao.", "D. Giữ vai trò tham mưu chính sách cho toàn bộ cách mạng Việt Nam."],
-    answer: "B"
-  },
-  {
-    text: "Lực lượng vũ trang thống nhất thành Quân giải phóng miền Nam Việt Nam được thành lập vào mốc thời gian nào?",
-    options: ["A. Ngày 15/2/1961", "B. Ngày 10/8/1961", "C. Ngày 20/12/1960", "D. Ngày 2/1/1963"],
-    answer: "A"
   }
 ];
 
